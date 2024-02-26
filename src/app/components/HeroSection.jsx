@@ -8,13 +8,9 @@ const HeroSection = () => {
     <section>
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
         <div className="col-span-1 place-self-center text-center sm:text-left">
-          {/* <h6 className="text-xs mb-4">$su Manvinderjit </h6> */}
-          {/* <h6 className="text-xs mb-4">$const USER = Manvinderjit </h6> */}
-          {/* <h6 className="text-xs">console.log(USER) </h6> */}
           <h1 className="text-white mb-4 text-3xl lg:text-5xl font-extrabold">
             <span>Hi, I am Manvinderjit!</span>
           </h1>
-          {/* <h6 className="text-xs">console.log(USER.skills); </h6> */}
           <h2 className="text-white text-2xl lg:text-4xl font-semibold">
             <span>I develop for </span> 
             <TypeAnimation
