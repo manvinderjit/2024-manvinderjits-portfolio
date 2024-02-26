@@ -12,7 +12,7 @@ const HeroSection = () => {
             <span>Hi, I am Manvinderjit!</span>
           </h1>
           <h2 className="text-white text-2xl lg:text-4xl font-semibold">
-            <span>I develop for </span> 
+            <span>I develop for </span>
             <TypeAnimation
               sequence={[
                 "the Web.",
@@ -24,25 +24,25 @@ const HeroSection = () => {
               ]}
               wrapper="span"
               speed={30}
-              //   style={{ fontSize: "2em", display: "inline-block" }}
               repeat={Infinity}
+              className="bg-gray-700 px-2"
             />
           </h2>
-          <p className="text-white my-3 text-base lg:text-large text-justify">
+          <p className="text-white my-3 text-base lg:text-large text-justify px-6 sm:px-0">
             Computer programming is my hobby, passion, and career. Having always
             loved coding, I have made it my sole professional priority. Web apps
             is my core domain and I enjoy both front-end and back-end although
             with the M.E.R.N. being my core tech stack and occassionally
             tinkering with Solidity and Ethereum blockchain.
           </p>
-          <p className="text-white my-3 text-base lg:text-large text-justify">
+          <p className="text-white my-3 text-base lg:text-large text-justify px-6 sm:px-0">
             I worked as a freelancer with a primary focus on S.E.O., along with
             setup, deployment, and management of WordPress websites on
             platforms, including Bluehost, Cloudways, and Digital Ocean,
             utilization of CDNs (Cloudflare), Elementor website builder and
             ServerPilot.
           </p>
-          <p className="text-white my-3 text-base lg:text-large text-justify">
+          <p className="text-white my-3 text-base lg:text-large text-justify px-6 sm:px-0">
             From an academic standpoint, I have a Bachelors of Technology and a
             Masters of Engineering in Information Technology. I completed a PG
             Certificate in Back-End and Blockchain Development from York
