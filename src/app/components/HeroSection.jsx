@@ -2,31 +2,42 @@
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from "react-type-animation";
+import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-        <div className="col-span-1 place-self-center text-center sm:text-left">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="col-span-1 place-self-center text-center sm:text-left"
+        >
           <h1 className="text-white mb-4 text-3xl lg:text-5xl font-extrabold">
-            <span>Hi, I am Manvinderjit!</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-red-600">
+              Hi, I am Manvinderjit!
+            </span>
+            {/* <span className='text-transparent bg-clip-text bg-gradient-to-l from-pink-500 via-red-500 to-yellow-500'>Hi, I am Manvinderjit!</span> */}
           </h1>
           <h2 className="text-white text-2xl lg:text-4xl font-semibold">
             <span>I develop for </span>
-            <TypeAnimation
-              sequence={[
-                "the Web.",
-                2000,
-                "MERN Stack.",
-                2000,
-                "Blockchain.",
-                2000,
-              ]}
-              wrapper="span"
-              speed={30}
-              repeat={Infinity}
-              className="bg-gray-700 px-2"
-            />
+            <span className="">
+              <TypeAnimation
+                sequence={[
+                  "the Web.",
+                  2000,
+                  "MERN Stack.",
+                  2000,
+                  "Blockchain.",
+                  2000,
+                ]}
+                wrapper="span"
+                speed={30}
+                repeat={Infinity}
+                className="bg-gray-700 px-2 border rounded-xl "
+              />
+            </span>
           </h2>
           <p className="text-white my-3 text-base lg:text-large text-justify px-6 sm:px-0">
             Computer programming is my hobby, passion, and career. Having always
@@ -50,15 +61,28 @@ const HeroSection = () => {
             hardware developments inspired me to launch my own blog, PCPepper.
           </p>
           <div className="my-4 text-center">
-            <button className="px-6 py-3 w-52 rounded-xl mx-3 bg-white hover:bg-slate-200 text-black mb-5 md:mb-0">
+            {/* <button className="px-6 py-3 w-52 rounded-xl mx-3 bg-white hover:bg-slate-200 text-black mb-5 md:mb-0">
               Hire Me!
             </button>
             <button className="px-6 py-3 w-52 rounded-xl mx-3 border border-white hover:bg-slate-900 text-white">
               Download CV
+            </button> */}
+            <button className="p-[2px] h-12 w-52 rounded-xl mx-3 my-2 md:my-0 bg-gradient-to-r from-purple-500 via-pink-600 to-red-600 hover:bg-slate-900 text-white font-semibold ">
+              Hire Me
+            </button>
+            <button className="p-[2px] w-52 h-12 rounded-xl mx-3 bg-gradient-to-r from-purple-500 via-pink-600 to-red-600 hover:bg-slate-900 text-white font-semibold ">
+              <span class="flex w-full h-full items-center justify-center bg-gray-900 text-white rounded-xl p-2">
+                Download CV
+              </span>
             </button>
           </div>
-        </div>
-        <div className="col-span-1 place-self-center mt-4 lg:mt-0">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="col-span-1 place-self-center mt-4 lg:mt-0"
+        >
           <div className="rounded-lg bg-gray-900 w-[500px] h-[600px] relative">
             <Image
               src="/images/manvinderjit.jpg"
@@ -68,7 +92,7 @@ const HeroSection = () => {
               height={400}
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
