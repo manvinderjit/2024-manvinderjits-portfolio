@@ -3,9 +3,7 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
-import { register } from "swiper/element/bundle";
-
-register();
+import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   return (
@@ -15,6 +13,7 @@ export default function Home() {
         <HeroSection />
         <ProjectsSection/>
         <SkillsSection/>
+        <ContactSection/>
       </div>
     </main>
   );
