@@ -2,6 +2,10 @@ import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
+import SkillsSection from "./components/SkillsSection";
+import { register } from "swiper/element/bundle";
+
+register();
 
 export default function Home() {
   return (
@@ -10,6 +14,7 @@ export default function Home() {
       <div class="container mx-auto mt-48">
         <HeroSection />
         <ProjectsSection/>
+        <SkillsSection/>
       </div>
     </main>
   );
