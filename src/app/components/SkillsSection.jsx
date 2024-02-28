@@ -37,21 +37,46 @@ const skillData = [
     height: 80,
   },
   {
+    name: "Next JS",
+    image: "/images/skills/next.png",
+    width: 80,
+    height: 80,
+  },
+  {
     name: "Redux",
     image: "/images/skills/redux.png",
     width: 80,
     height: 80,
   },
-
   {
-    name: "TypeScript",
-    image: "/images/skills/ts.png",
+    name: "Bootstrap",
+    image: "/images/skills/bootstrap-logo.svg",
     width: 80,
     height: 80,
   },
   {
-    name: "Next js 13",
-    image: "/images/skills/next.png",
+    name: "EJS",
+    image: "/images/skills/ejs.png",
+    width: 80,
+    height: 80,
+  },
+
+  {
+    name: "",
+    image: "/images/skills/",
+    width: 80,
+    height: 80,
+  },
+
+  {
+    name: "Node js",
+    image: "/images/skills/node-js.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "ExpressJS",
+    image: "/images/skills/express.png",
     width: 80,
     height: 80,
   },
@@ -62,45 +87,21 @@ const skillData = [
     height: 80,
   },
   {
-    name: "Stripe Payment",
-    image: "/images/skills/stripe.webp",
+    name: "Docker",
+    image: "/images/skills/docker-mark.png",
     width: 80,
     height: 80,
-  },
-  {
-    name: "Node js",
-    image: "/images/skills/node-js.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    name: "Mongo db",
-    image: "/images/skills/mongodb.png",
-    width: 80,
-    height: 80,
-  },
-];
-
-export const Socials = [
-  {
-    name: "Discord",
-    src: "/instagram.svg",
-  },
-  {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg",
   },
 ];
 
 const SkillsSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center my-10">
-      <h2 className="text-center text-4xl font-bold mt-20 mb-10">Skills</h2>
-      <div className="flex flex-col gap-12 max-w-[80%] text-center items-center">
+    <section
+      id="skills"
+      className="flex flex-col items-center justify-center pt-20 md:pt-32"
+    >
+      <h2 className="text-center text-4xl font-bold mb-12 md:mb-20">Skills</h2>
+      <div className="flex flex-col max-w-[80%] gap-16 md:gap-32 text-center ">
         {/* <Swiper
           slidesPerView={5}
           loop={true}
@@ -130,7 +131,7 @@ const SkillsSection = () => {
           loop={true}
           autoplay={{
             delay: 0,
-            disableOnInteraction: false,            
+            disableOnInteraction: false,
           }}
           speed={5000}
           modules={[Autoplay]}
@@ -138,12 +139,12 @@ const SkillsSection = () => {
         >
           {skillData.map((skill, index) => (
             <SwiperSlide key={index}>
-              <div className="w-[30px] sm:w-[40px] md:w-[80px] h-[30px] sm:h-[40px] md:h-[80px]">
+              <div className="w-[30px] sm:w-[40px] md:w-[80px] h-[30px] sm:h-[40px] md:h-[80px] relative">
                 <Image
                   src={skill.image}
                   alt={skill.name}
-                  layout="fill"
-                  objectFit="contain"
+                  fill={true}
+                  style={{ objectFit: "contain" }}
                 />
               </div>
             </SwiperSlide>
@@ -163,12 +164,12 @@ const SkillsSection = () => {
         >
           {skillData.map((skill, index) => (
             <SwiperSlide key={index}>
-              <div className="w-[30px] sm:w-[40px] md:w-[80px] h-[30px] sm:h-[40px] md:h-[80px]">
+              <div className="w-[30px] sm:w-[40px] md:w-[80px] h-[30px] sm:h-[40px] md:h-[80px] relative">
                 <Image
                   src={skill.image}
                   alt={skill.name}
-                  layout="fill"
-                  objectFit="contain"
+                  fill={true}
+                  style={{ objectFit: "contain" }}
                 />
               </div>
             </SwiperSlide>

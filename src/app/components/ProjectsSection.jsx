@@ -8,56 +8,83 @@ const projectsData = [
   {
     id: 1,
     title: "Shopping App",
-    description: "Project 1 description",
+    description:
+      "A React-Redux shopping website that allows customers to buy products. It leverages APIs provided by the Inventory App.",
     image: "/images/projects/react-shopping-app.png",
+    techstack: "React, React-Redux, React Router, Bootstrap, and Vite.",
     tag: ["All", "Web", "MERN"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/manvinderjit/2023-TOP-Project-Shopping-Cart",
     liveUrl: "https://2023-top-project-shopping-cart.pages.dev/",
   },
   {
     id: 2,
     title: "Inventory Management App",
-    description: "Project 2 description",
+    description:
+      "A full-fledged app that enables inventory management for employees. It integrates with the React Shopping Cart App by providing RESTful APIs for it.",
     image: "/images/projects/inventory-app.png",
+    techstack:
+      "Express, NodeJS, MongoDB, Mongoose, EJS, Bootstrap, AWS, CI/CD, Docker, HTML5, and HTTPS/SSL.",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    liveUrl: "/",
+    gitUrl:
+      "https://github.com/manvinderjit/2023-TOP-Project-Inventory-Application",
+    liveUrl: "https://ia.manvinderjit.com",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "REACT ToDo Notes App",
+    description:
+      "An app that allows users to add, edit, delete, and mark Todos. Leverages React classes to demonstrate workability with legacy code.",
     image: "/images/projects/react-notes-app.png",
+    techstack: "React & Bootstrap",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    liveUrl: "/",
+    gitUrl: "https://github.com/manvinderjit/2023-Project-React-ToDos",
+    liveUrl: "https://2023-project-react-todos.pages.dev",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/project-weather-app.png",
+    title: "Dynamic Restaurant Website",
+    description:
+      "A basic static website created for a restaurant with all content generated dynamically.",
+    image: "/images/projects/dynamic-restaurant-website.png",
+    techstack: "JS, CSS, & Webpack",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    liveUrl: "/",
+    gitUrl: "https://github.com/manvinderjit/2023-TOP-Project-Restaurant-Page",
+    liveUrl: "https://manvinderjit.github.io/2023-TOP-Project-Restaurant-Page/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/tn-todo-toronto.png",
+    title: "Weather App",
+    description:
+      "An app that fetches location-based weather data based on user input from the Weather API.",
+    techstack: "NodeJS & Webpack.",
+    image: "/images/projects/project-weather-app.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    liveUrl: "/",
+    gitUrl: "https://github.com/manvinderjit/2023-TOP-Project-Weather-App",
+    liveUrl: "https://manvinderjit.github.io/2023-TOP-Project-Weather-App/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "To Do Toronto Blog",
+    description:
+      "An informational / landing page created for tourists wanting information about Toronto.",
+    techstack: "HTML & CSS.",
+    image: "/images/projects/tn-todo-toronto.png",
+    tag: ["All", "Web"],
+    gitUrl:
+      "https://github.com/manvinderjit/2023-Project-Travel-Guide-Landing-Page",
+    liveUrl:
+      "https://manvinderjit.github.io/2023-Project-Travel-Guide-Landing-Page/",
+  },
+  {
+    id: 7,
+    title: "Recipe Blog Page",
+    description:
+      "A recipe webpage created for a food blog to provide information to visitors.",
+    techstack: "HTML & CSS.",
     image: "/images/projects/tn-recipes.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    liveUrl: "/",
+    gitUrl: "https://github.com/manvinderjit/2023-Project-Recipe-Page",
+    liveUrl: "https://manvinderjit.github.io/2023-Project-Recipe-Page/",
   },
 ];
 
@@ -78,12 +105,10 @@ const ProjectsSection = () => {
   }
 
   return (
-    <section>
-      <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12 ">
-        My Projects
-      </h2>
+    <section id="projects" className="pt-20 md:pt-32">
+      <h2 className="text-center text-4xl font-bold">My Projects</h2>
 
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 my-4">
         <ProjectTag
           onClick={handleProjectTagChange}
           name="All"
@@ -100,7 +125,11 @@ const ProjectsSection = () => {
           isSelected={selectedProjectTag === "MERN"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      {/* <ul
+        ref={ref}
+        className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12"
+      > */}
+        <ul ref={ref} className="flex flex-row gap-8 md:gap-12 flex-wrap items-center justify-center">
         {filteredProjectsByTag.map((project, index) => (
           <motion.li
             key={index}
@@ -108,12 +137,14 @@ const ProjectsSection = () => {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
+            className="md: w-[420px]"
           >
             <ProjectCard
               key={project.id}
               title={project.title}
               description={project.description}
               imgUrl={project.image}
+              techStack={project.techstack}
               gitUrl={project.gitUrl}
               liveURL={project.liveUrl}
             />
