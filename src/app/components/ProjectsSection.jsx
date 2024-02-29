@@ -68,7 +68,7 @@ const projectsData = [
     description:
       "An informational / landing page created for tourists wanting information about Toronto.",
     techstack: "HTML & CSS.",
-    image: "/images/projects/tn-todo-toronto.png",
+    image: "/images/projects/todo-toronto.png",
     tag: ["All", "Web"],
     gitUrl:
       "https://github.com/manvinderjit/2023-Project-Travel-Guide-Landing-Page",
@@ -81,7 +81,7 @@ const projectsData = [
     description:
       "A recipe webpage created for a food blog to provide information to visitors.",
     techstack: "HTML & CSS.",
-    image: "/images/projects/tn-recipes.png",
+    image: "/images/projects/recipe-blog.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/manvinderjit/2023-Project-Recipe-Page",
     liveUrl: "https://manvinderjit.github.io/2023-Project-Recipe-Page/",
