@@ -92,7 +92,7 @@ const SkillsSection = () => {
       id="skills"
       className="flex flex-col items-center justify-center pt-20 md:pt-32"
     >
-      <h2 className="text-center text-4xl font-bold mb-12 md:mb-20">Skills</h2>
+      <h2 className="text-center text-4xl text-white font-bold mb-12 md:mb-20">Skills</h2>
       <div className="flex flex-col max-w-[80%] gap-16 md:gap-32 text-center ">
         <Swiper
           slidesPerView={5}
