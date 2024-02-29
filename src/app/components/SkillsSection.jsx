@@ -132,13 +132,14 @@ const SkillsSection = () => {
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
+            disableOnInteraction: false,
           }}
           speed={5000}
           modules={[Autoplay]}
           className="max-w-[80%]"
         >
           {skillData.map((skill, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index}>              
               <div className="w-[30px] sm:w-[40px] md:w-[80px] h-[30px] sm:h-[40px] md:h-[80px] relative">
                 <Image
                   src={skill.image}
