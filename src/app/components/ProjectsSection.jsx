@@ -125,10 +125,7 @@ const ProjectsSection = () => {
           isSelected={selectedProjectTag === "MERN"}
         />
       </div>
-      {/* <ul
-        ref={ref}
-        className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12"
-      > */}
+      
         <ul ref={ref} className="flex flex-row gap-8 md:gap-12 flex-wrap items-center justify-center">
         {filteredProjectsByTag.map((project, index) => (
           <motion.li

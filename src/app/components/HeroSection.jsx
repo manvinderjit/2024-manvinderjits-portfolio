@@ -19,7 +19,7 @@ const HeroSection = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-red-600">
               Hi, I am Manvinderjit!
             </span>
-            {/* <span className='text-transparent bg-clip-text bg-gradient-to-l from-pink-500 via-red-500 to-yellow-500'>Hi, I am Manvinderjit!</span> */}
+            
           </h1>
           <h2 className="text-white text-2xl lg:text-4xl font-semibold">
             <span>I develop for </span>
@@ -62,12 +62,6 @@ const HeroSection = () => {
             hardware developments inspired me to launch my own blog, PCPepper.
           </p>
           <div className="my-4 text-center">
-            {/* <button className="px-6 py-3 w-52 rounded-xl mx-3 bg-white hover:bg-slate-200 text-black mb-5 md:mb-0">
-              Hire Me!
-            </button>
-            <button className="px-6 py-3 w-52 rounded-xl mx-3 border border-white hover:bg-slate-900 text-white">
-              Download CV
-            </button> */}
             <Link href="https://linkedin.com/in/manvinderjit" target="_blank">
               <button className="p-[2px] h-12 w-52 rounded-xl mx-3 my-2 md:my-0 bg-gradient-to-r from-purple-500 via-pink-600 to-red-600 hover:bg-slate-900 text-white font-semibold ">
                 Hire Me
