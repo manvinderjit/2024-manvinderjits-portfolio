@@ -60,14 +60,6 @@ const skillData = [
     width: 80,
     height: 80,
   },
-
-  {
-    name: "",
-    image: "/images/skills/",
-    width: 80,
-    height: 80,
-  },
-
   {
     name: "Node js",
     image: "/images/skills/node-js.png",
