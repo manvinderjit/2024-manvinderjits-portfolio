@@ -24,35 +24,47 @@ const projectsData = [
     image: "/images/projects/inventory-app.png",
     techstack:
       "Express, NodeJS, MongoDB, Mongoose, EJS, Bootstrap, AWS, CI/CD, Docker, HTML5, and HTTPS/SSL.",
-    tag: ["All", "Web"],
+    tag: ["All", "Web", "MERN"],
     gitUrl:
       "https://github.com/manvinderjit/2023-TOP-Project-Inventory-Application",
     liveUrl: "https://ia.manvinderjit.com",
   },
   {
     id: 3,
+    title: "NFT Ticket Swap Blockchain Ethereum",
+    description:
+      "A backend-only project that allows users to swap movie tickets sold as NFTs on the Ethereum platform.",
+    image: "/images/projects/ethereum-logo.png",
+    techstack:
+      "Node.js, Express, MySQL, Solidity (Smart Contract), & Test-driven Development (Truffle).",
+    tag: ["All", "Web", "MERN"],
+    gitUrl: "https://github.com/manvinderjit/csbc-2010-project",
+    liveUrl: "https://github.com/manvinderjit/csbc-2010-project",
+  },
+  {
+    id: 4,
     title: "REACT ToDo Notes App",
     description:
       "An app that allows users to add, edit, delete, and mark Todos. Leverages React classes to demonstrate workability with legacy code.",
     image: "/images/projects/react-notes-app.png",
     techstack: "React & Bootstrap",
-    tag: ["All", "Web"],
+    tag: ["All", "Web", "MERN"],
     gitUrl: "https://github.com/manvinderjit/2023-Project-React-ToDos",
     liveUrl: "https://2023-project-react-todos.pages.dev",
   },
   {
-    id: 4,
+    id: 5,
     title: "Dynamic Restaurant Website",
     description:
       "A basic static website created for a restaurant with all content generated dynamically.",
     image: "/images/projects/dynamic-restaurant-website.png",
     techstack: "JS, CSS, & Webpack",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/manvinderjit/2023-TOP-Project-Restaurant-Page",
     liveUrl: "https://manvinderjit.github.io/2023-TOP-Project-Restaurant-Page/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Weather App",
     description:
       "An app that fetches location-based weather data based on user input from the Weather API.",
@@ -63,26 +75,26 @@ const projectsData = [
     liveUrl: "https://manvinderjit.github.io/2023-TOP-Project-Weather-App/",
   },
   {
-    id: 6,
+    id: 7,
     title: "To Do Toronto Blog",
     description:
       "An informational / landing page created for tourists wanting information about Toronto.",
     techstack: "HTML & CSS.",
     image: "/images/projects/todo-toronto.png",
-    tag: ["All", "Web"],
+    tag: ["All"],
     gitUrl:
       "https://github.com/manvinderjit/2023-Project-Travel-Guide-Landing-Page",
     liveUrl:
       "https://manvinderjit.github.io/2023-Project-Travel-Guide-Landing-Page/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Recipe Blog Page",
     description:
       "A recipe webpage created for a food blog to provide information to visitors.",
     techstack: "HTML & CSS.",
     image: "/images/projects/recipe-blog.png",
-    tag: ["All", "Web"],
+    tag: ["All"],
     gitUrl: "https://github.com/manvinderjit/2023-Project-Recipe-Page",
     liveUrl: "https://manvinderjit.github.io/2023-Project-Recipe-Page/",
   },
