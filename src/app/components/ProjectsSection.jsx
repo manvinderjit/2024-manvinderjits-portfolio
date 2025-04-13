@@ -11,7 +11,7 @@ const projectsData = [
     description:
       "A React-Redux shopping website that allows customers to buy products. It leverages APIs provided by the Inventory App.",
     image: "/images/projects/react-shopping-app.png",
-    techstack: "React, React-Redux, React Router, Bootstrap, and Vite.",
+    techstack: "TypeScript, JavaScript, React, React-Redux, React Router, Tailwind CSS, Vitest, React Testing Library, MSW, and Vite.",
     tag: ["All", "Web", "MERN"],
     gitUrl: "https://github.com/manvinderjit/2023-TOP-Project-Shopping-Cart",
     liveUrl: "https://2023-top-project-shopping-cart.pages.dev/",
@@ -23,7 +23,7 @@ const projectsData = [
       "A full-fledged app that enables inventory management for employees. It integrates with the React Shopping Cart App by providing RESTful APIs for it.",
     image: "/images/projects/inventory-app.png",
     techstack:
-      "Express, NodeJS, MongoDB, Mongoose, EJS, Bootstrap, AWS, CI/CD, Docker, HTML5, and HTTPS/SSL.",
+      "TypeScript, Express, NodeJS, MongoDB, Mongoose, EJS, Bootstrap, AWS S3, SQS, SES, SNS, Lambda, CI/CD, Docker, Jest, and Supertest.",
     tag: ["All", "Web", "MERN"],
     gitUrl:
       "https://github.com/manvinderjit/2023-TOP-Project-Inventory-Application",

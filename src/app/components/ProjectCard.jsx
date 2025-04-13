@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 const ProjectCard = ({ imgUrl, title, description, techStack, liveURL, gitUrl }) => {
   return (
-    <div>
+    <div className="min-w-[320px]">
       <div
-        className="h-52 md:h-72 relative group"
+        className="h-52 md:h-72 relative group rounded-t-md"
         style={{
           background: `url(${imgUrl})`,
           backgroundSize: "cover",
@@ -31,7 +31,7 @@ const ProjectCard = ({ imgUrl, title, description, techStack, liveURL, gitUrl })
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl bg-[#181818] px-4 py-6 text-justify">
+      <div className="text-white rounded-b-xl bg-[#181818] px-4 py-6 text-justify h-72">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE] h-32 md:h-24">
           <span className="font-semibold text-white"> Description:</span>
