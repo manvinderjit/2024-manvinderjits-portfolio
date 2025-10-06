@@ -8,37 +8,36 @@ import Link from 'next/link';
 const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
-          className="col-span-1 place-self-center text-center sm:text-left"
+          className="col-span-1 place-self-center mt-4 lg:mt-0"
+        >
+          <div className="rounded-full bg-gray-900 w-[320px] h-[320px] overflow-hidden">
+            <Image
+              src="/images/manvinderjit.jpg"
+              alt="Manvinderjit"
+              className="rounded-full object-cover scale-125"
+              width={320}
+              height={320}
+            />
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="col-span-1 place-self-center text-center"
         >
           <h1 className="text-white mb-4 text-3xl lg:text-5xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-red-600">
               Hi, I am Manvinderjit!
             </span>
-            
           </h1>
-          <h2 className="text-white text-2xl lg:text-4xl font-semibold">
-            <span>I develop for </span>
-            <span className="">
-              <TypeAnimation
-                sequence={[
-                  "the Web.",
-                  2000,
-                  "MERN Stack.",
-                  2000,
-                  "Blockchain.",
-                  2000,
-                ]}
-                wrapper="span"
-                speed={30}
-                repeat={Infinity}
-                className="bg-gray-700 px-2 border rounded-xl "
-              />
-            </span>
+          <h2 className="text-white text-lg lg:text-xl font-medium">
+            <span>Fullstack | Cloud | AWS </span>            
           </h2>
           <p className="text-white my-3 text-base lg:text-large text-justify ">
             Computer programming is my hobby, passion, and career. Having always
@@ -74,22 +73,6 @@ const HeroSection = () => {
                 </span>
               </button>
             </Link>
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 }}
-          className="col-span-1 place-self-center mt-4 lg:mt-0"
-        >
-          <div className="rounded-lg bg-gray-900 w-[320px] sm:w-[400px] h-[390px] sm:h-[480px] relative">
-            <Image
-              src="/images/manvinderjit.jpg"
-              alt="Manvinderjit"
-              className="rounded-lg absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={320}
-              height={400}
-            />
           </div>
         </motion.div>
       </div>
