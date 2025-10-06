@@ -69,7 +69,7 @@ const HeroSection = () => {
             </Link>
             <Link href="https://github.com/manvinderjit" target="_blank">
               <button className="p-[2px] w-52 h-12 rounded-xl mx-3 bg-gradient-to-r from-purple-500 via-pink-600 to-red-600 hover:bg-slate-900 text-white font-semibold ">
-                <span class="flex w-full h-full items-center justify-center bg-gray-900 text-white rounded-xl p-2 hover:bg-slate-800">
+                <span className="flex w-full h-full items-center justify-center bg-gray-900 text-white rounded-xl p-2 hover:bg-slate-800">
                   Visit Github
                 </span>
               </button>
