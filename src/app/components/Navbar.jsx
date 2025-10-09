@@ -7,9 +7,13 @@ import MenuOverlay from './MenuOverlay';
 
 const navLinks = [
   {
+    title: "Journey",
+    href: "#journey",
+  },
+  {
     title: "Projects",
     href: "#projects",
-  },  
+  },
   {
     title: "Skills",
     href: "#skills",
