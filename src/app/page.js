@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-black">
       <Navbar/>
-      <div className="container mx-auto mt-48 px-[7.5%] md:px-[2.5%]">
+      <div className="container mx-auto mt-36 px-[7.5%] md:px-[2.5%]">        
         <HeroSection />
         <ProjectsSection/>
         <SkillsSection/>
