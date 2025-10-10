@@ -49,7 +49,7 @@ const certifications = [
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white pb-12 px-6 rounded-lg overflow-x-hidden">
+    <section className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 text-white pb-12 px-6 rounded-lg">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ const HeroSection = () => {
                   rel="noopener noreferrer"
                   className="block"
                 >
-                  <div className="relative h-28 w-28 bg-gray-800 p-2 rounded-lg border border-gray-700 group-hover:shadow-[0_0_15px_#ff4d6d] transition">
+                  <div className="relative h-28 w-28 bg-gray-800 p-4 rounded-lg border border-gray-700 shadow-lg group-hover:shadow-pink-500/20 transition duration-500 ease-in-out">
                     <Image
                       src={cert.img}
                       alt={cert.name}
@@ -114,7 +114,7 @@ const HeroSection = () => {
                 </Link>
 
                 {/* Tooltip (now absolutely positioned but not affecting layout) */}
-                <span className="absolute -bottom-8 text-sm bg-gray-900 text-gray-300 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">
+                <span className="absolute -bottom-10 text-sm bg-gray-900 text-gray-300 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">
                   {cert.name}
                 </span>
               </div>
