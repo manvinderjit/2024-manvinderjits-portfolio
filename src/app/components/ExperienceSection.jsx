@@ -202,7 +202,7 @@ const ExperienceSection = () => {
 
 
   return (
-    <section id="journey" className="pt-20 md:pt-32">
+    <section id="journey" className="pt-20 md:pt-32 overflow-x-hidden">
       <h2 className="text-4xl font-bold text-center text-white mb-2">
         From <span className="text-pink-500">Code</span> to{" "}
         <span className="text-purple-400">Cloud</span> and{" "}
@@ -213,7 +213,7 @@ const ExperienceSection = () => {
         milestones.
       </p>
 
-      {/* Filter Buttons */}     
+      {/* Filter Buttons */}
       <div className="flex justify-center gap-4 mb-12 flex-wrap">
         {FILTERS.map((name) => {
           const isSelected = filter === name;
@@ -312,7 +312,7 @@ const ExperienceSection = () => {
                   <ul
                     className={`list-disc text-gray-300 text-sm leading-relaxed space-y-1 mt-2  ${
                       isLeft
-                        ? "list-outside md:ml-auto md:w-[95%] text-left"
+                        ? "list-inside md:list-outside md:ml-auto md:w-[95%] text-left"
                         : "list-inside md:w-[95%] text-left"
                     }`}
                   >
