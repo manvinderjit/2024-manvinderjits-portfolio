@@ -49,7 +49,7 @@ const certifications = [
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 text-white pb-12 px-6 rounded-lg overflow-x-hidden">
+    <section className="bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white pb-12 px-6 rounded-lg overflow-x-hidden">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
