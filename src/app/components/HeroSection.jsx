@@ -49,7 +49,7 @@ const certifications = [
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 text-white pb-12 px-6 rounded-lg">
+    <section className="bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white pb-12 px-6 rounded-lg overflow-x-hidden">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ const HeroSection = () => {
                   rel="noopener noreferrer"
                   className="block"
                 >
-                  <div className="relative h-28 w-28 bg-gray-800 p-4 rounded-lg border border-gray-700 shadow-lg group-hover:shadow-pink-500/20 transition duration-500 ease-in-out">
+                  <div className="relative h-28 w-28 bg-gray-800 p-2 rounded-lg border border-gray-700 shadow-lg group-hover:shadow-pink-500/20 transition duration-500 ease-in-out">
                     <Image
                       src={cert.img}
                       alt={cert.name}
