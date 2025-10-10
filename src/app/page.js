@@ -7,11 +7,11 @@ import ExperienceSection from "./components/ExperienceSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-black">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-black min-w-80">
       <Navbar/>
-      <div className="container mx-auto mt-36 px-[7.5%] md:px-[2.5%]">        
+      <div className="container mx-auto mt-36 px-[7.5%] md:px-[2.5%]">
         <HeroSection />
-        <ExperienceSection />       
+        <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
         <ContactSection />
