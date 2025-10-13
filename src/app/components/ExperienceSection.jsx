@@ -202,7 +202,7 @@ const ExperienceSection = () => {
 
 
   return (
-    <section id="journey" className="pt-20 md:pt-32 overflow-x-hidden pb-8">
+    <section id="journey" className="pt-20 md:pt-32 overflow-x-hidden pb-16">
       <h2 className="text-4xl font-bold text-center text-white mb-2">
         From <span className="text-pink-500">Code</span> to{" "}
         <span className="text-purple-400">Cloud</span> and{" "}

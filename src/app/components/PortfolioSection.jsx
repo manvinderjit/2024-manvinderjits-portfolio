@@ -253,7 +253,7 @@ const PortfolioSection = () => {
   return (
     <section
       id="portfolio"
-      className="pt-20 md:pt-32 bg-gradient-to-b from-black via-gray-900/40 to-black text-white overflow-x-hidden pb-24"
+      className="pt-20 md:pt-32 bg-gradient-to-b from-black via-gray-900/40 to-black text-white overflow-x-hidden pb-16"
     >
       <h2 className="text-4xl font-bold text-center mb-2">
         My <span className="text-pink-500">Portfolio</span>
@@ -266,7 +266,7 @@ const PortfolioSection = () => {
 
       <motion.div
         layout
-        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 sm:px-6 md:px-12 overflow-visible"
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 sm:px-6 md:px-12 overflow-visible"
       >
         {projects.map((project, idx) => {
           const currentIndex = currentImages[idx] || 0;
