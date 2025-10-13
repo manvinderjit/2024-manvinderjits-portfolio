@@ -266,7 +266,7 @@ const PortfolioSection = () => {
 
       <motion.div
         layout
-        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 sm:px-6 md:px-12 overflow-visible"
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 sm:px-6 md:px-12 overflow-visible"
       >
         {projects.map((project, idx) => {
           const currentIndex = currentImages[idx] || 0;
