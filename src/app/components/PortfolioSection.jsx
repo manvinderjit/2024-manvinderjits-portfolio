@@ -253,7 +253,7 @@ const PortfolioSection = () => {
   return (
     <section
       id="portfolio"
-      className="pt-20 md:pt-32 bg-gradient-to-b from-black via-gray-900/40 to-black text-white overflow-x-hidden pb-24"
+      className="pt-20 md:pt-32 bg-gradient-to-b from-black via-gray-900/40 to-black text-white overflow-x-hidden pb-16"
     >
       <h2 className="text-4xl font-bold text-center mb-2">
         My <span className="text-pink-500">Portfolio</span>
