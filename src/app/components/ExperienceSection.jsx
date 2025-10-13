@@ -202,7 +202,7 @@ const ExperienceSection = () => {
 
 
   return (
-    <section id="journey" className="pt-20 md:pt-32 overflow-x-hidden">
+    <section id="journey" className="pt-20 md:pt-32 overflow-x-hidden pb-8">
       <h2 className="text-4xl font-bold text-center text-white mb-2">
         From <span className="text-pink-500">Code</span> to{" "}
         <span className="text-purple-400">Cloud</span> and{" "}
@@ -255,7 +255,7 @@ const ExperienceSection = () => {
                 onClick={() => toggle(index)}
                 className={`
                   bg-gray-800 p-6 rounded-2xl shadow-xl w-full max-w-xl cursor-pointer 
-                  hover:shadow-pink-500/20 transition duration-500 ease-in-out relative
+                  hover:shadow-pink-500/20 transition duration-500 ease-in-out relative 
                   ${
                     isLeft
                       ? "md:text-right text-center"
