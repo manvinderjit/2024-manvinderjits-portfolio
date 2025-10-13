@@ -11,8 +11,8 @@ const navLinks = [
     href: "#journey",
   },
   {
-    title: "Projects",
-    href: "#projects",
+    title: "Portfolio",
+    href: "#portfolio",
   },
   {
     title: "Skills",
