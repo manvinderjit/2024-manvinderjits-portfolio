@@ -87,6 +87,35 @@ const projects = [
   },
   {
     id: 4,
+    title: "AWS 3-Tier IaC DevOps Pipeline",
+    description: [
+      "A 3-tier Terraform IaC devops pipeline leveraging AWS EKS, MSK Kafka, and RDS database frontended by load balancer.",
+      "Uses Terraform to declare infrastructure as code for deployment on AWS.",
+      "Creates a GitHub Actions based CI/CD pipeline for automated deployment.",
+      "Deploys an app that simulates an ad analytics platform.",
+    ],
+    images: [
+      "/images/projects/AWS3TierEKSMKS-infra.jpg",
+      "/images/projects/2-analytics-dash-full.png",
+      "/images/projects/1-ads-index.png",
+      "/images/projects/3-raw-event-logs.png",
+    ],
+    skills: [
+      { name: "Terraform", type: "General" },
+      { name: "AWS", type: "Cloud" },
+      { name: "Kubernetes", type: "Cloud" },
+      { name: "Apache Kafka", type: "Cloud" },
+      { name: "CI/CD", type: "DevOps" },
+      { name: "GitHub", type: "DevOps" },
+      { name: "GitActions", type: "DevOps" },
+    ],
+    tag: ["All", "Web", "MERN"],
+    gitRepoUrl:
+      "https://github.com/manvinderjit/aws-terraform-projects/tree/main/eks-msk-rds-app",
+    liveUrl: "https://github.com/manvinderjit/react-springboot-kafka-apps",
+  },
+  {
+    id: 5,
     title: "Shopping App",
     description: [
       "A React-Redux e-commerce store website that allows customers to buy products and manage orders.",
@@ -115,7 +144,7 @@ const projects = [
     liveUrl: "https://2023-top-project-shopping-cart.pages.dev/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Inventory Management App",
     description: [
       "A full-fledged app that enables inventory management for employees.",
