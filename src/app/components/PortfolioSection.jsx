@@ -95,10 +95,10 @@ const projects = [
       "Deploys an app that simulates an ad analytics platform.",
     ],
     images: [
-      "/images/projects/AWS3TierEKSMKS-infra.jpg",
-      "/images/projects/2-analytics-dash-full.png",
-      "/images/projects/1-ads-index.png",
-      "/images/projects/3-raw-event-logs.png",
+      "/images/projects/3-tier-eks-msk-rds-app-infra.png",
+      "/images/projects/3-tier-eks-msk-rds-app-ad-index.png",
+      "/images/projects/3-tier-eks-msk-rds-app-traffic-flow-no-obsv.png",
+      "/images/projects/3-tier-eks-msk-rds-analytics-dash.png",
     ],
     skills: [
       { name: "Terraform", type: "General" },
